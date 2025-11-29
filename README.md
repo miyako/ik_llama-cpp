@@ -16,7 +16,7 @@ cmake --build build_arm --config Release
 ### Intel
 
 ```
-cmake -S . -B build_rosetta \
+cmake -S . -B build_amd \
   -DLLAMA_NATIVE=OFF \
   -DCMAKE_C_FLAGS="-msse3 -mssse3 -msse4.1 -msse4.2 -mavx -mavx2 -mfma -mf16c" \
   -DCMAKE_CXX_FLAGS="-msse3 -mssse3 -msse4.1 -msse4.2 -mavx -mavx2 -mfma -mf16c"
@@ -25,13 +25,4 @@ cmake --build build_amd --config Release
 
 ### Windows
 
-```
-cmake -S . -B build -A X64 -DBUILD_SHARED_LIBS=OFF -DGGML_IQK_MUL_MAT=OFF
-cmake --build build --config Release
-```
-
-* add 
-
-```
-__AVX2__=1
-```
+Not supported (original llama.cpp is used instead)
