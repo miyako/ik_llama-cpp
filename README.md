@@ -9,7 +9,7 @@ Local inference engine
 ### Apple Silicon
 
 ```
-cmake -S . -B build_arm -DGGML_METAL=ON
+cmake -S . -B build_arm -DGGML_METAL=ON -DBUILD_SHARED_LIBS=OFF
 cmake --build build_arm --config Release
 ```
 
@@ -17,7 +17,7 @@ cmake --build build_arm --config Release
 
 ```
 cmake -S . -B build_amd \
-  -DLLAMA_NATIVE=OFF \
+  -DLLAMA_NATIVE=OFF -DBUILD_SHARED_LIBS=OFF \
   -DCMAKE_C_FLAGS="-msse3 -mssse3 -msse4.1 -msse4.2 -mavx -mavx2 -mfma -mf16c" \
   -DCMAKE_CXX_FLAGS="-msse3 -mssse3 -msse4.1 -msse4.2 -mavx -mavx2 -mfma -mf16c"
 cmake --build build_amd --config Release
