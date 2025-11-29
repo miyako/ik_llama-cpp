@@ -6,6 +6,8 @@
 # ik_llama-cpp
 Local inference engine
 
+**aknowledgements**: [ikawrakow/ik_llama.cpp](https://github.com/ikawrakow/ik_llama.cpp)
+
 ### Apple Silicon
 
 ```
