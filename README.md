@@ -26,12 +26,12 @@ cmake --build build_amd --config Release
 ### Windows
 
 ```
-cmake -S . -B build -A X64 -DBUILD_SHARED_LIBS=OFF
+cmake -S . -B build -A X64 -DBUILD_SHARED_LIBS=OFF -DGGML_IQK_MUL_MAT=OFF
 cmake --build build --config Release
 ```
 
-add 
+* add 
 
-```c
-#define __AVX2__ 1
+```
+__AVX2__=1
 ```
