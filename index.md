@@ -17,7 +17,7 @@ layout: default
 
 #### Usage
 
-Instantiate `cs.llama.llama`  in your *On Startup* database method:
+Instantiate `cs.llama.llama` in your *On Startup* database method:
 
 ```4d
 var $llama : cs.llama.llama
